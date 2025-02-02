@@ -4,6 +4,7 @@ export interface AvailableCountriesResponse {
 }
 
 export interface CountryInfoResponse {
+  countryName: string;
   borderCountries: BorderCountry[];
   populationCounts: PopulationCounts[];
   flagUrl: string;
