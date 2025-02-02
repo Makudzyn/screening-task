@@ -10,8 +10,8 @@ The project consists of **two parts**:
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone <REPOSITORY_URL>
-cd <REPOSITORY_NAME>
+git clone https://github.com/Makudzyn/screening-task.git
+cd screening-task
 ```
 
 ### 2️⃣ Install Dependencies
