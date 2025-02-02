@@ -56,6 +56,7 @@ export interface CountryFlagData {
 
 // Country Info response
 export interface CountryInfoResponse {
+  countryName: string;
   borderCountries: BorderCountry[];
   populationCounts: PopulationCounts[];
   flagUrl: string;

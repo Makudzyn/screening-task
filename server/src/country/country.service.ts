@@ -72,6 +72,7 @@ export class CountryService {
       const flagUrl = flagResponse.data.data.flag;
 
       return {
+        countryName,
         borderCountries,
         populationCounts,
         flagUrl,
