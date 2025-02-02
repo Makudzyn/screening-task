@@ -1,10 +1,13 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { ReactNode } from "react";
+import type { Metadata } from 'next';
+import './globals.css';
+import { ReactNode } from 'react';
 
 export const metadata: Metadata = {
-  title: "Screening Task",
-  description: "Countries and information about them",
+  title: {
+    template: '%s | Countries app',
+    default: 'Countries app',
+  },
+  description: 'Countries and information about them',
 };
 
 export default function RootLayout({
@@ -14,11 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className="antialiased"
-      >
-        {children}
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

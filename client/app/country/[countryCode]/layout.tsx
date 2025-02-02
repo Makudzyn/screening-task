@@ -2,11 +2,9 @@ import { Metadata } from 'next';
 import { ReactNode } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Country page',
+  title: 'Country Info Page',
 };
 
 export default function Layout({ children }: { children: ReactNode }) {
-  return (
-    <>{children}</>
-  );
+  return <div>{children}</div>;
 }

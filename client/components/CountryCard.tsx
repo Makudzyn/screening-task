@@ -1,6 +1,6 @@
 'use client';
 
-import Link from "next/link";
+import Link from 'next/link';
 
 interface CountryCardProps {
   countryCode: string;
@@ -10,9 +10,7 @@ interface CountryCardProps {
 export default function CountryCard({ countryCode, name }: CountryCardProps) {
   return (
     <Link key={countryCode} href={`/country/${countryCode}`}>
-      <div className="p-4 border rounded-lg cursor-pointer hover:bg-gray-100">
-        {name}
-      </div>
+      <div className="cursor-pointer rounded-lg border p-4 hover:bg-gray-800">{name}</div>
     </Link>
   );
-};
+}
